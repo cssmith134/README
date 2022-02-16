@@ -1,21 +1,11 @@
-//const readmeDataArgs = process.argv.slice(2, process.length);
+const fs = require('fs');
+const generateReadme = require('./src/readme-template.js');
+
+const readmeDataArgs = process.argv.slice(2, process.length);
+const [name, github] = readmeDataArgs;
 
 
-//const printReadmeData = readmeDataArr => {
-  //  for (let i = 0; i < readmeDataArr.length; i+=1) {
-    //  console.log(readmeDataArr[i]);
-    //}
-
-    //console.log('======');
-
-    //readmeDataArr.forEach((readmeItem) =>{
-      //  console.log(readmeItem)
-    //});
-
-  //};
-
-//printReadmeData(readmeDataArgs)
-
-const generateReadme = () => 'Name: Cooper, Github:cssmith';
-
-console.log(generateReadme())
+fs.writeFile('README.md', generateReadme(name,github), err=> {
+    if (err) throw err;
+    console.log('readme complete!')
+});
