@@ -1,21 +1,16 @@
 const inquirer = require('inquirer');
 
-//const fs = require('fs');
-//const generateReadme = require('./src/readme-template.js');
-
-
-//const [name, github] = readmeDataArgs;
-
+const fs = require('fs');
+const generateReadme = require('./src/readme-template');
 
 //fs.writeFile('README.md', generateReadme(name,github), err=> {
   //  if (err) throw err;
     //console.log('readme complete!')
 //});
 
-const promptUser = () => {
+const promptReadme = readmeData => {
 
-return inquirer
-    .prompt([
+return inquirer.prompt([
         {
             type: 'input',
             name: 'title',
@@ -88,4 +83,20 @@ return inquirer
     ]);
 };
 
-promptUser().then(answers => console.log(answers));
+promptReadme()
+.then(readmeData => {
+    const pageReadme = generateReadme(readmeData)
+
+    fs.writeFile('./README.md', pageReadme, err => {
+   if (err) throw new Error(err);
+
+    console.log('Page created!')
+})
+
+})
+
+//const pageReadme = generateReadme();
+
+
+
+

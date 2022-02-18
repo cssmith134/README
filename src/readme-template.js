@@ -1,15 +1,16 @@
 
 
+module.exports = templateData => {
+ console.log(templateData)
 
-const generateReadme = (userName, githubName) => {
+
     return `
     
-    
-    Name: ${userName}
-    Github: ${githubName}
+    Name: ${templateData.name}
+    Github: ${templateData.github}
     `;
-    }
     
+};
     
 
 
@@ -18,4 +19,4 @@ const generateReadme = (userName, githubName) => {
 
 
 
-module.exports = generateReadme;
+//module.exports = generateReadme;
