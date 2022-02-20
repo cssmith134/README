@@ -1,7 +1,7 @@
 
     
 ## Title
-Readme
+README
 
 
 ## Table of Contents
@@ -17,18 +17,18 @@ Readme
 
 
 ## Description:
-to create a readme file
+to create a readme file through node.js
 
 ## Installation:
 npm
 
 ## Usage:
-creating an easy readme file
+To create a readme.md file
 
 ## Badge
 
-[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
-GPL 3.0
+[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+Apache 2.0
 
 ## Contributors
 Cooper Smith
@@ -40,7 +40,7 @@ npm test
 My Github : cssmith134 
 
 
-My Email: cssmith134@csdac
+My Email: cssmith134@gmail.com
 
-link to video: https://drive.google.com/file/d/1fgUH4cv2P5_h-fViR5d1PlLSVu8J8_G7/view
+link to video: https://drive.google.com/file/d/1Qkn07NK1Dwp4BegdFW-VSd9fjsERbrJo/view
     
