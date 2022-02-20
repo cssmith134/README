@@ -52,7 +52,7 @@ return inquirer.prompt([
         },
 
         {
-            type: 'test',
+            type: 'input',
             name: 'tests',
             message: 'What command should be run to run tests?'
         },
@@ -92,7 +92,7 @@ promptReadme()
 
 })
 
-//const pageReadme = generateReadme();
+
 
 
 
