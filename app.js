@@ -3,10 +3,7 @@ const inquirer = require('inquirer');
 const fs = require('fs');
 const generateReadme = require('./src/readme-template');
 
-//fs.writeFile('README.md', generateReadme(name,github), err=> {
-  //  if (err) throw err;
-    //console.log('readme complete!')
-//});
+
 
 const promptReadme = readmeData => {
 
@@ -37,7 +34,7 @@ return inquirer.prompt([
 
         {
             type: 'list',
-            name: 'license badge',
+            name: 'badge',
             message: 'What kind of license do you want your project to have?',
             choices: [
                 'MIT',
@@ -73,7 +70,7 @@ return inquirer.prompt([
         },
         {
             type: 'input',
-            name: 'project name',
+            name: 'name',
             message: 'What is the name of your project?',
 
         },
